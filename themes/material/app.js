@@ -247,12 +247,6 @@ function file_code(path){
 	var content = `
 <div class="mdui-container">
 <pre id="editor" ></pre>
-</div>
-<div class="mdui-textfield">
-	<label class="mdui-textfield-label">Download link</label>
-	<input class="mdui-textfield-input" type="text" value="${href}"/>
-</div>
-<a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 
 <script src="https://cdn.staticfile.org/ace/1.4.7/ace.js"></script>
 <script src="https://cdn.staticfile.org/ace/1.4.7/ext-language_tools.js"></script>
@@ -296,15 +290,10 @@ function file_video(path){
 	<br>${playBtn}
 	<!-Fixed label->
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML reference</label>
 	  <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
 	</div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
 	$('#content').html(content);
 }
@@ -320,16 +309,12 @@ function file_audio(path){
 	</audio>
 	<br>
 	<!-Fixed label->
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
+
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML reference</label>
 	  <textarea class="mdui-textfield-input"><audio><source src="${url}"></audio></textarea>
 	</div>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 	`;
 	$('#content').html(content);
 }
@@ -344,9 +329,7 @@ function file_image(path){
 	<img class="mdui-img-fluid" src="${url}"/>
 	<br>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
+	  
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML references</label>
 	  <input class="mdui-textfield-input" type="text" value="<img src='${url}' />"/>
@@ -357,7 +340,7 @@ function file_image(path){
 	</div>
         <br>
 </div>
-<a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+
 	`;
 	$('#content').html(content);
 }
