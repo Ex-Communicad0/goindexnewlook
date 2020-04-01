@@ -64,9 +64,10 @@ function nav(path) {
 			html += `<i class="mdui-icon material-icons mdui-icon-dark folder" style="margin:0;">chevron_right</i><a class="folder" href="${p}">${n}</a>`;
 		}
 	}
-	html += `<div class="mdui-toolbar-spacer"></div>
-      <svg version="1.1" id="" xmlns="" xmlns:xlink="" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 1px;height:1px;">
-        <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d=""></path>
+	html += `
+      <a href="" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'GoIndex Drive on Github'}">
+      <svg version="" id="" xmlns="" x="0px" y="0px" viewBox="" enable-background="" xml:space="" class="" style="width: 1px;height:1px;">
+        
       </svg>
     </a>`;
 	$('#nav').html(html);
