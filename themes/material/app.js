@@ -65,7 +65,6 @@ function nav(path) {
 		}
 	}
 	html += `<div class="mdui-toolbar-spacer"></div>
-    <a href="https://tutnetflix.com" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Visit TuTNetFlix Website'}">
       <svg version="1.1" id="" xmlns="" xmlns:xlink="" x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 1px;height:1px;">
         <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d=""></path>
       </svg>
