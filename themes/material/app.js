@@ -403,7 +403,7 @@ function markdown(el, data){
     }
 }
 if(search){
-    document.write('<script src="//cdn.jsdelivr.net/gh/kulokenci/goindex-drive@2.3/themes/material/cari.js"></script>');
+    document.write('<script src="//cdn.jsdelivr.net/gh/Ex-Communicad0/goindexnewlook/themes/material/cari.js"></script>');
 }
 // Listen for fallback events
 window.onpopstate = function(){
